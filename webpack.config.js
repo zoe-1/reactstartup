@@ -1,6 +1,4 @@
-'use strict';
-
-const path = require('path');
+const Path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const Webpack = require('webpack');
@@ -12,7 +10,7 @@ module.exports = {
     devtool: 'inline-source-map',
     output: {
         filename: '[name].bundle.js',
-        path: path.resolve(__dirname, 'dist'),
+        path: Path.resolve(__dirname, 'dist'),
         publicPath: '/'
     },
     devServer: {
@@ -31,15 +29,15 @@ module.exports = {
     ],
     module: {
         rules: [
-            { 
-                test: /\.js$/, 
-                exclude: /node_modules/, 
-                loader: "babel-loader" 
+            {
+                test: /\.js$/,
+                exclude: /node_modules/,
+                loader: 'babel-loader'
             },
-            { 
-                test: /\.jsx$/, 
-                exclude: /node_modules/, 
-                loader: "babel-loader" 
+            {
+                test: /\.jsx$/,
+                exclude: /node_modules/,
+                loader: 'babel-loader'
             }
         ]
     }

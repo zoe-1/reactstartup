@@ -1,0 +1,15 @@
+{
+    "parserOptions": {
+        "sourceType": "module",
+        "ecmaFeatures": {
+            "jsx": true
+        }
+    },
+    "extends": [
+        "eslint-config-hapi",
+        "plugin:react/recommended"
+    ],
+    "plugins": [
+        "react"
+    ]
+}

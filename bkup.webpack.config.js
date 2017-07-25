@@ -1,6 +1,4 @@
-'use strict';
-
-const path = require('path');
+const Path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const Webpack = require('webpack');
@@ -14,7 +12,7 @@ module.exports = {
     output: {
         // filename: 'bundle.js',
         filename: '[name].bundle.js',
-        path: path.resolve(__dirname, 'dist'),
+        path: Path.resolve(__dirname, 'dist'),
         publicPath: '/'
     },
     devServer: {
@@ -33,31 +31,31 @@ module.exports = {
     ],
     module: {
         rules: [
-            { 
-                test: /\.js$/, 
-                exclude: /node_modules/, 
-                loader: "babel-loader" 
-            },
-            { 
-                test: /\.jsx$/, 
-                exclude: /node_modules/, 
-                loader: "babel-loader" 
-            },
-            { 
-                test: /\.styl$/, 
-                exclude: /node_modules/, 
-                loader: 'style-loader!css-loader!stylus-loader' 
+            {
+                test: /\.js$/,
+                exclude: /node_modules/,
+                loader: 'babel-loader'
             },
             {
-              test: /\.(png|svg|jpg|gif)$/,
-              exclude: /node_modules/, 
-              use: [
-                'file-loader'
-              ]
+                test: /\.jsx$/,
+                exclude: /node_modules/,
+                loader: 'babel-loader'
+            },
+            {
+                test: /\.styl$/,
+                exclude: /node_modules/,
+                loader: 'style-loader!css-loader!stylus-loader'
+            },
+            {
+                test: /\.(png|svg|jpg|gif)$/,
+                exclude: /node_modules/,
+                use: [
+                    'file-loader'
+                ]
             },
             {
                 test: /\.(woff|woff2|eot|ttf|otf)$/,
-                exclude: /node_modules/, 
+                exclude: /node_modules/,
                 use: [
                     'file-loader'
                 ]
