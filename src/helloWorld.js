@@ -27,12 +27,12 @@ HelloWorld.propTypes = {
 
 const Styles = {
     h1: {
-        'fontFamily': 'jura-bold',
+        'fontFamily': 'jura-bold, sans-serif',
         'color': '#09409d',
         'font-size': '64px'
     },
     h3: {
-        'fontFamily': 'jura-bold',
+        'fontFamily': 'jura-bold, sans-serif',
         'color': '#09409d',
         'font-size': '44px'
     },

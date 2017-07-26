@@ -77,3 +77,14 @@ __core-js_shared__ is the culprit.
 npm install -save-dev stylus stylus-loader style-loader file-loader
 
 
+CREDITS
+
+**jura font**<br/> 
+  SIL Open Font License v1.10 <br/>
+  https://www.fontsquirrel.com/fonts/jura1 <br/>
+  [licenses/JURA-LICENSE](licenses/JURA-LICENSE) <br/>
+
+**volkhov font** <br/>
+  SIL Open Font License v1.10 <br/>
+  https://www.fontsquirrel.com/fonts/volkhov <br/>
+  [licenses/VOLKHOV-LICENSE](licenses/VOLKHOV-LICENSE) <br/>
