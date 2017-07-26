@@ -18,7 +18,7 @@ describe('/helloWorld', () => {
     it('props generate correct text', (done) => {
 
         const wrapper = shallow(<HelloWorld message="test run" />);
-        expect(wrapper.text()).to.equal('test run');
+        expect(wrapper.find('h1').text()).to.equal('test run');
         done();
     });
 

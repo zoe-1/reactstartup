@@ -38,6 +38,18 @@ module.exports = {
                 test: /\.jsx$/,
                 exclude: /node_modules/,
                 loader: 'babel-loader'
+            },
+            {
+                test: /\.styl$/,
+                exclude: /node_modules/,
+                loader: 'style-loader!css-loader!stylus-loader'
+            },
+            {
+                test: /\.(woff|woff2|eot|ttf|otf)$/,
+                exclude: /node_modules/,
+                use: [
+                    'file-loader'
+                ]
             }
         ]
     }

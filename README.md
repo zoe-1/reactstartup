@@ -72,3 +72,8 @@ Requires sourceType: "module" which treats everything as a module versus script.
 Eliminates need for 'use strict';. However, now found a memory leak when running tests. 
 __core-js_shared__ is the culprit.
 
+
+### styles and fonts
+npm install -save-dev stylus stylus-loader style-loader file-loader
+
+
