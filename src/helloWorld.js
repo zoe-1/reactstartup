@@ -7,7 +7,7 @@ const HelloWorld = ({ message }) => {
     const element = (
         <div>
             <h1 style={Styles.h1}>{message}</h1>
-            <h3 style={Styles.h3}><b>sample react</b></h3>
+            <h3 style={Styles.h3}><b>details</b></h3>
             <ul style={Styles.ul}>
                 <li>webpack rollup </li>
                 <li>loads custom fonts -- jura, volkhov</li>

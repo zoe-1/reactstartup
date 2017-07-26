@@ -1,11 +1,19 @@
 # webpack client
 
+```
+git clone git@github.com:zoe-1/reactstartup.git
+
+cd reactstartup
+
+npm install
+```
+
 ## webpack, babel, and react setup
   - reactjs
   - webpack
 
-npm install --save-dev babel-loader babel-core babel-preset-react babel-preset-es2015 webpack webpack-dev-server html-webpack-plugin clean-webpack-plugin pug pug-loader
-npm install --save react react-dom react-router react-router-dom prop-types
+npm install --save-dev babel-loader babel-core babel-preset-react babel-preset-es2015 webpack webpack-dev-server html-webpack-plugin clean-webpack-plugin pug pug-loader <br/><br/>
+npm install --save react react-dom react-router react-router-dom prop-types<br/>
 
 
 ### configure .babelrc
